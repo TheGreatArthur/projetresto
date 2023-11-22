@@ -14,7 +14,11 @@ if(isset($_SESSION['connect'])){
 					 
 					case 'connexion':
 					 include 'controleur/ctlConnexion.php';
-					 break;					 
+					 break;	
+					 
+					 case 'reservation':
+						include 'controleur/ctlreservation.php';
+						break;	
 				}	
 		}		
 if(!isset($_SESSION['connect'])){
