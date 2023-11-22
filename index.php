@@ -16,8 +16,8 @@ if(isset($_SESSION['connect'])){
 					 include 'controleur/ctlConnexion.php';
 					 break;	
 					 
-					 case 'reservation':
-						include 'controleur/ctlreservation.php';
+					 case 'attention':
+						include 'controleur/attention.php';
 						break;	
 				}	
 		}		
