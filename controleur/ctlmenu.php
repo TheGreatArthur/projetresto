@@ -12,7 +12,7 @@ switch($action){
 				$id = $_GET['id'];
 				
 			 //appel à la base de donnée le modele
-				$data = DbEmploye::getUnmenu($id);
+				$data = Dbmenu::getUnmenu($id);
 			 
 			 //appel à la vue
 			 include 'vue/vuemenu/v_ficheEmployes.php';
@@ -21,7 +21,7 @@ switch($action){
 			 
 			case 'lister':
 			 //appel à la base de donnée le modele
-				$data = DbEmploye::getAllmenu();
+				$data = Dbmenu::getAllmenu();
 			 
 			 //appel à la vue
 			 include 'vue/vuemenu/v_listeEmployes.php';
@@ -33,10 +33,10 @@ switch($action){
 				$id = $_GET['id'];
 				//appel à la base de donnée le modele pour suppression 
 				
-				DbEmploye::deletemenu($id);
+				Dbmenu::deletemenu($id);
 				
 				//appel à la base de donnée le modele pour listage
-				$data = DbEmploye::getAllmenu();
+				$data = Dbmenu::getAllmenu();
 				
 				//appel à la vue
 				include 'vue/vuemenu/v_listeEmployes.php';
