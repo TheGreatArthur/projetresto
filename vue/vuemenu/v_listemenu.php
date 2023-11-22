@@ -15,10 +15,10 @@
 						<td><?php echo $ligne['mat'];?></td>
 						<td><?php echo $ligne['nom'];?></td>
 						<td>
-						<a href="index.php?ctl=employe&action=supprimer&id=<?php echo $ligne['id'];?>">
+						<a href="index.php?ctl=menu&action=supprimer&id=<?php echo $ligne['id'];?>">
 							<img src=".\vue\images\remove.png"width=20px height=20px>
 						</a>
-						<a href="index.php?ctl=employe&action=fiche&id=<?php echo $ligne['id'];?>">
+						<a href="index.php?ctl=menu&action=fiche&id=<?php echo $ligne['id'];?>">
 							<img src=".\vue\images\editer.png"width=20px height=20px>
 						</a>
 						
@@ -31,4 +31,3 @@
 
  
 </div>
-

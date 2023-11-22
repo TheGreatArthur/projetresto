@@ -6,7 +6,7 @@
 					<ul class="navbar-nav">
 				
 					   <li class="nav-item">
-						  <a class="nav-link" href='index.php?ctl=employe&action=lister'>Employes</a>
+						  <a class="nav-link" href='index.php?ctl=menu&action=lister'>menu</a>
 					   </li>
 					   
 					   <li class="nav-item">
