@@ -14,7 +14,10 @@ if(isset($_SESSION['connect'])){
 					 
 					case 'connexion':
 					 include 'controleur/ctlConnexion.php';
-					 break;					 
+					 break;		
+					 case 'commande':
+						include 'controleur/ctlConnexion.php';
+						break;				 
 				}	
 		}		
 if(!isset($_SESSION['connect'])){
