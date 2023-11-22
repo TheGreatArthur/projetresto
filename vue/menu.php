@@ -13,7 +13,7 @@
 						  <a class="nav-link" href='index.php?ctl=service&action=lister'>Services</a>
 					   </li>
 					   <li class="nav-item">
-						  <a class="nav-link" href="ajoutProduitPdo.php">Metiers</a>
+						  <a class="nav-link" href="ajoutProduitPdo.php">Reservation</a>
 					   </li>
 				   
 					</ul>
