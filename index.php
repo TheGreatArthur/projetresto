@@ -8,8 +8,8 @@ if(isset($_SESSION['connect'])){
 		{
 			switch($_GET['ctl']){
 								 
-					case 'employe':
-					 include 'controleur/ctlEmploye.php';
+					case 'menu':
+					 include 'controleur/ctlmenu.php';
 					 break;
 					 
 					case 'connexion':
