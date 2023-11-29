@@ -5,33 +5,52 @@
     <meta charset="utf-8">
     <title>Entreprise Resto</title>
 
-    <!-- Utilisation du thème Flatly de Bootswatch pour un look soft -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/flatly/bootstrap.min.css">
+    <!-- Utilisation du thème Lux de Bootswatch pour un look moderne -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/lux/bootstrap.min.css">
 </head>
 
 <body>
 
-    <!-- En-tête -->
-    <div class="container-fluid bg-info text-white py-3">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <h4 class="font-weight-bold">Entreprise Resto</h4>
+            <a class="navbar-brand" href="#">Entreprise Resto</a>
+
+            <!-- Toggle button for small screens -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <div class="navbar-nav">
                     <?php
                     if (isset($_SESSION['email'])) {
-                        echo '<p class="mb-0">Bienvenue, ' . $_SESSION['email'] . '</p>';
+                        echo '<p class="nav-item nav-link mb-0">Bienvenue, ' . $_SESSION['email'] . '</p>';
                     }
                     ?>
                 </div>
-                <div class="col-6 text-right">
+                <div class="navbar-nav">
                     <?php if (!isset($_SESSION['connect'])) {  ?>
                         <!-- Ajoute du contenu ici si nécessaire pour les utilisateurs non connectés -->
                     <?php } else { ?>
-                        <a href="index.php?ctl=connexion&action=deconnecter" class="btn btn-outline-light">Déconnecter</a>
+                        <a href="index.php?ctl=connexion&action=deconnecter" class="btn btn-outline-dark">Déconnecter</a>
                     <?php } ?>
                 </div>
             </div>
         </div>
+    </nav>
+
+    <!-- Jumbotron for additional styling -->
+    <div class="jumbotron jumbotron-fluid bg-light text-dark text-center">
+        <div class="container">
+            <h1 class="display-5">Bienvenue chez Entreprise Resto</h1>
+            <p class="lead">Découvrez une expérience culinaire exceptionnelle.</p>
+        </div>
     </div>
 
+    <!-- Other content of your page goes here -->
 
+</body>
+
+</html>
