@@ -11,8 +11,6 @@ switch($action){
 			 
 			 case 'deconnecter':
 				session_destroy();
-				//unset($_SESSION['connect']);
-				//unset($_SESSION['email']);
 				header('Location: index.php');
 		
 			break;
@@ -28,6 +26,10 @@ switch($action){
 					if($tabresult==true){
 						$_SESSION['connect'] =true;
 						$_SESSION['email'] =$email;
+						$_SESSION['statut'] =$tabresult['statut'];
+						$_SESSION['nom']=$tabresult['nom'];
+
+
 						header('Location: index.php');
 					}else
 					{

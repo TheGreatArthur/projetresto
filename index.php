@@ -2,7 +2,14 @@
 session_start();
 include 'vue/entete.php';
 if(isset($_SESSION['connect'])){
+	if ($_SESSION['statut']=='user'){
 		include 'vue/menu.php';	
+
+	} else {
+		include 'vue/menuadmin.php';	
+
+	}
+			
 }
 		if(isset($_GET['ctl']))
 		{
@@ -16,8 +23,8 @@ if(isset($_SESSION['connect'])){
 					 include 'controleur/ctlConnexion.php';
 					 break;	
 					 
-					 case 'attention':
-						include 'controleur/attention.php';
+					 case 'reservation':
+						include 'controleur/ctlreservation.php';
 						break;	
 				}	
 		}		
