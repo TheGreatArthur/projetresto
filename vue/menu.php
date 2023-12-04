@@ -34,8 +34,6 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Contenu de la page avec les menus -->
     
 </body>
 
