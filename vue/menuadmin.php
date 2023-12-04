@@ -10,7 +10,7 @@
 					   </li>
 					   
 					   <li class="nav-item">
-						  <a class="nav-link" href='index.php?ctl=service&action=lister'>Services</a>
+						  <a class="nav-link" href='index.php?ctl=menu&action=formmenu'>AjoutMenu</a>
 					   </li>
 					   <li class="nav-item">
 						  <a class="nav-link" href='index.php?ctl=reservation&action=lister'> Les Reservation</a>

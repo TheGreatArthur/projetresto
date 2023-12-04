@@ -18,6 +18,13 @@ switch($action){
 			 include 'vue/vuemenu/v_listemenu.php';
 			 
 			 break;
+			 case 'formmenu':
+			
+				
+				 //appel à la vue
+				 include 'vue/vuemenu/v_formajoutmenu.php';
+				 
+				 break;
 			 
 			case 'lister':
 			 //appel à la base de donnée le modele
