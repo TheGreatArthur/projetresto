@@ -14,7 +14,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">Entreprise Resto</a>
+            <a class="navbar-brand" href="#">Campus Resto</a>
 
             <!-- Toggle button for small screens -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -44,7 +44,7 @@
     <!-- Jumbotron for additional styling -->
     <div class="jumbotron jumbotron-fluid bg-light text-dark text-center">
         <div class="container">
-            <h1 class="display-5">Bienvenue chez Entreprise Resto</h1>
+            <h1 class="display-5">Bienvenue chez Campus Resto</h1>
             <p class="lead">Découvrez une expérience culinaire exceptionnelle.</p>
         </div>
     </div>

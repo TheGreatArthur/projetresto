@@ -15,7 +15,7 @@ switch($action){
 				$data = Dbmenu::getUnmenu($id);
 			 
 			 //appel à la vue
-			 include 'vue/vuemenu/v_ficheEmployes.php';
+			 include 'vue/vuemenu/v_listemenu.php';
 			 
 			 break;
 			 
@@ -24,7 +24,7 @@ switch($action){
 				$data = Dbmenu::getAllmenu();
 			 
 			 //appel à la vue
-			 include 'vue/vuemenu/v_listeEmployes.php';
+			 include 'vue/vuemenu/v_listemenu.php';
 			 
 			 break;
 			 
@@ -39,7 +39,7 @@ switch($action){
 				$data = Dbmenu::getAllmenu();
 				
 				//appel à la vue
-				include 'vue/vuemenu/v_listeEmployes.php';
+				include 'vue/vuemenu/v_listemenu.php';
 			
 			break;
 				

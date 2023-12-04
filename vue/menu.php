@@ -1,6 +1,3 @@
-</body>
-
-</html>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +7,13 @@
 
     <!-- Utilisation du thème Flatly de Bootswatch pour un look soft -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/flatly/bootstrap.min.css">
+
+    <style>
+        .card-img-custom {
+            height: 400px; /* ajustez la hauteur selon vos besoins */
+            object-fit: cover; /* permet de conserver les proportions tout en couvrant la zone spécifiée */
+        }
+    </style>
 </head>
 
 <body>
@@ -31,5 +35,8 @@
         </div>
     </nav>
 
+    <!-- Contenu de la page avec les menus -->
+    
+</body>
 
-
+</html>
