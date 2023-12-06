@@ -31,7 +31,7 @@
                     ?>
                 </div>
                 <div class="navbar-nav">
-                    <?php if (!isset($_SESSION['connect'])) {  ?>
+                    <?php if (!isset($_SESSION['connect'])) { ?>
                         <!-- Ajoute du contenu ici si nécessaire pour les utilisateurs non connectés -->
                     <?php } else { ?>
                         <a href="index.php?ctl=connexion&action=deconnecter" class="btn btn-outline-dark">Déconnecter</a>
@@ -48,9 +48,3 @@
             <p class="lead">Découvrez une expérience culinaire exceptionnelle.</p>
         </div>
     </div>
-
-    <!-- Other content of your page goes here -->
-
-</body>
-
-</html>
