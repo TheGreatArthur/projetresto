@@ -28,5 +28,12 @@ class Dbmenu {
         $objResult->bindParam(':id', $id);
         $objResult->execute();
     }
+    public static function insertMenu($nom_menu, $qte, $lien){
+		$sql = "INSERT INTO menu(id_menu, nom_menu,qte_dispo,image) VALUES (NULL, '$nom_menu', $qte,'$lien');";
+		$connect = MysqlDb::getPdoDb();//objet classe PDO
+		$objResult = $connect->exec($sql); //objet classe PDOStatement
+
+	}
+    
 }
 ?>
