@@ -22,10 +22,10 @@ class Dbmenu {
     }
 
     public static function deletemenu($id) {
-        $sql = "DELETE FROM menu WHERE id = :id";
+        $sql = "DELETE FROM menu WHERE id_menu = :x";
         $connect = MysqlDb::getPdoDb();
         $objResult = $connect->prepare($sql);
-        $objResult->bindParam(':id', $id);
+        $objResult->bindParam(':x', $id);
         $objResult->execute();
     }
 }

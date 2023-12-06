@@ -30,6 +30,7 @@ switch($action){
 							$_SESSION['email'] =$email;
 							$_SESSION['statut'] =$tabresult['statut'];
 							$_SESSION['nom']=$tabresult['nom'];
+							$_SESSION['panier']=array();
 
 
 						header('Location: index.php');
