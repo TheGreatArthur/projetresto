@@ -9,7 +9,6 @@
                         <h5 class="card-title h6"><?php echo $ligne['nom_menu']; ?></h5>
                         <p class="card-text">Un menu composé d'un plat du jour, d'une boisson et d'un dessert au choix.</p>
 
-                        <p class="card-text"><strong>Quantité disponible :</strong> <?php echo $ligne['qte_dispo']; ?></p>
                         <div class="form-group">
                             <label for="quantity"><strong>Quantité :</strong></label>
                             <input type="number" id="quantity" value="1" min="1" class="form-control">
@@ -26,6 +25,9 @@
                         ?>
 
                         <a href="<?php echo $buttonLink; ?>" class="btn btn-primary btn-sm"><?php echo $buttonText; ?></a>
+                        
+                        <!-- Bouton Modifier -->
+                        <a href="index.php?ctl=menu&action=modifier&id=<?php echo $ligne['id_menu']; ?>" class="btn btn-warning btn-sm">Modifier</a>
                     </div>
                 </div>
             </div>
@@ -34,3 +36,4 @@
         <!-- Menu Salade -->
     </div>
 </div>
+
