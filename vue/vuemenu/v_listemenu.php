@@ -9,6 +9,7 @@
                         <h5 class="card-title h6"><?php echo $ligne['nom_menu']; ?></h5>
                         <p class="card-text">Un menu composé d'un plat du jour, d'une boisson et d'un dessert au choix.</p>
 
+                        
                         <div class="form-group">
                             <label for="quantity"><strong>Quantité :</strong></label>
                             <input type="number" id="quantity" value="1" min="1" class="form-control">
@@ -43,4 +44,3 @@ if ($_SESSION['statut'] == 'admin') {
         <!-- Menu Salade -->
     </div>
 </div>
-
