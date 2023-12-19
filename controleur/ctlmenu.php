@@ -81,6 +81,24 @@ switch($action){
 				 
 				 break;
 
+				 case 'modifier':
+				
+					$id = $_GET['id'];
+					$qte = $_GET['qte'];
+					//appel à la base de donnée le modele pour suppression 
+					
+					Dbmenu::updatemenu($id,$qte);
+					
+					//appel à la base de donnée le modele pour listage
+					$data = Dbmenu::getAllmenu();
+					
+					//appel à la vue
+					include 'vue/vuemenu/v_listemenu.php';
+				
+				break;
+				 
+
+
 				
 				
 		}

@@ -34,6 +34,15 @@ class Dbmenu {
 		$objResult = $connect->exec($sql); //objet classe PDOStatement
 
 	}
+
+    public static function updatemenu($id,$qte) {
+        $sql = "UPDATE menu SET qte_dispo = :x WHERE menu.id_menu = :y;";
+        $connect = MysqlDb::getPdoDb();
+        $objResult = $connect->prepare($sql);
+        $objResult->bindParam(':y', $id);
+        $objResult->bindParam(':x', $qte);
+        $objResult->execute();
+    }
     
 }
 ?>

@@ -27,7 +27,14 @@
                         <a href="<?php echo $buttonLink; ?>" class="btn btn-primary btn-sm"><?php echo $buttonText; ?></a>
                         
                         <!-- Bouton Modifier -->
-                        <a href="index.php?ctl=menu&action=modifier&id=<?php echo $ligne['id_menu']; ?>" class="btn btn-warning btn-sm">Modifier</a>
+                       <!-- Bouton Modifier -->
+<?php
+// Vérifiez si l'utilisateur est en mode administrateur
+if ($_SESSION['statut'] == 'admin') {
+    echo '<a href="index.php?ctl=menu&action=modifier&id=' . $ligne['id_menu'] . '&qte=' . $ligne['qte_dispo'] . '" class="btn btn-warning btn-sm">Modifier</a>';
+}
+?>
+
                     </div>
                 </div>
             </div>
